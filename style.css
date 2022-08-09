@@ -1,0 +1,49 @@
+* {
+  color: red;
+}
+.Rey {
+  color: rgba(7, 213, 245, 0.623);
+}
+
+h2 {
+  color: blue;
+}
+
+button {
+  color: yellow;
+}
+
+#Go {
+  background-color: black;
+}
+
+[veloz="sii"] {
+  color: green;
+}
+
+h1 p {
+  background-color: violet;
+}
+
+h3 b {
+  background-color: steelblue;
+}
+
+h3 b span {
+  color: turquoise;
+}
+h3 b:hover {
+  color: turquoise;
+}
+
+button:hover{
+    color: aqua;
+}
+
+/* Selector universal --> * */
+/* Selector por etiqueta --> h1 */
+/* Selector por clase --> .Rey */
+/* Selector por ID: tiene que ser unico el ID y utilizarlo uno por etiqueta --> #Go  */
+/* Selector por atributo --> <h1 veloz="sii"></h1> => [veloz="sii"] */
+/* Selector por descendiente --> <h1><p></p></h1> => h1 p */
+/* Selecotr por pseudo-clases */
