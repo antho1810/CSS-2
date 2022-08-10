@@ -141,11 +141,12 @@ p{
   margin: auto;
 } */
 div {
-  width: 200px;
-  height: 200px;
-  background: yellow;
+  width: 100px;
+  height: 100px;
   display: block;
+  background: green;
   text-align: center;
+  position: absolute;
 }
 
 /* outline sirve para señalar el objeto pero no lo reduce */
@@ -164,14 +165,46 @@ div {
 
 } */
 /* padding: arriba, derecha, abajo, izquierda */
-
-/* .caja-1 {
-  background: orange;
+.contenedor {
+  position: relative;
+  border: 4px solid red;
+  margin: 50px auto;
+  height: 450px;
+  width: 450px;
+}
+.caja-1 {
+  background-color: red;
+  /* outline: 5px solid blue; */
+  
 }
 .caja-2 {
-  background: blueviolet;
+  background-color: red;
+  right: 0;
 }
 .caja-3 {
+  background-color: red;
+bottom: 0;
+  
+}
+.caja-4 {
+  background-color: red;
+  right: 0;
+  bottom: 0;
+}
+.caja-5{
+  background-color: red;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  /* margin: 170px; */
+}
+.caja-6{
+  margin: 170px 225px 175px 0px;
+  background: red;
+}
+/* .caja-3 {
   background: turquoise;
   position: relative;
   top: 60px;
@@ -193,12 +226,10 @@ En un contenedor de padre e hijo el hijo el no tiene position relative se pondre
 /* Z-index: se pone encima de otro objeto depende el valor que uno le de. 
 por ejemplo: <h2 style="z-index=2"></h2><h1 style="z-index=0"></h1> */
 
-
 /* El z-index en un contenedor con hijo, para contener el padre por encima del hijo
 necesita poner en el hijo, un z-index inferior a cero o un numero un negativo*/
 
-
-.contenedor{
+/* .contenedor{
   width: 300px;
   height: 300px;
   background-color: aqua;
@@ -214,4 +245,4 @@ necesita poner en el hijo, un z-index inferior a cero o un numero un negativo*/
   top: -20px;
   left: -20px;
   z-index: -1;
-}
+} */
