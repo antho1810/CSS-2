@@ -36,8 +36,8 @@ h3 b:hover {
   color: turquoise;
 }
 
-button:hover{
-    color: aqua;
+button:hover {
+  color: aqua;
 }
 
 /* Selector universal --> * */
@@ -47,3 +47,30 @@ button:hover{
 /* Selector por atributo --> <h1 veloz="sii"></h1> => [veloz="sii"] */
 /* Selector por descendiente --> <h1><p></p></h1> => h1 p */
 /* Selecotr por pseudo-clases */
+
+#Go {
+  color: yellow;
+}
+
+button {
+  color: red !important;
+}
+/* utilizar !important cuando sea la etiqueta 
+sea unica o no se valla a cambiar en un futuro */
+
+/* Especificidad de mayor a menor por jeraquia
+ -------> !important
+ ------> estilos en linea
+ -----> Idenficadores - ID
+ ----> Clases
+ ----> Pseudo-clases
+ ----> Atributos
+ ---> Elementos
+ ---> Pseudo-elementos */
+/* Por el nivel de jerarquia se mueve en cascada */
+
+
+
+
+
+ 
