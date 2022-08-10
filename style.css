@@ -102,9 +102,12 @@ y tambien se usa bastante*/
 
  /* Propiedades de texto */
  .contact-form{
-    font-family: sans-serif, cursive;
+    font-family: 'Times New Roman', cursive;
     line-height: 1;
-    font-weight: 400;
+    font-weight: 100;
     /* font-stretch: normal; */
     font-variant: small-caps;
  }
+
+
+ 
