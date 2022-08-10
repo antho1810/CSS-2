@@ -98,3 +98,13 @@ height: 50vh;
 y tambien se usa bastante*/
 /* em - 16px
  */
+
+
+ /* Propiedades de texto */
+ .contact-form{
+    font-family: sans-serif, cursive;
+    line-height: 1;
+    font-weight: 400;
+    /* font-stretch: normal; */
+    font-variant: small-caps;
+ }
