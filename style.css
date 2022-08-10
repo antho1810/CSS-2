@@ -1,5 +1,7 @@
 * {
   color: red;
+  padding: 0px;
+  margin: 0px;
 }
 .Rey {
   color: rgba(7, 213, 245, 0.623);
@@ -80,4 +82,19 @@ sea unica o no se valla a cambiar en un futuro */
     color: blue;
 }
 
- 
+
+/* Unidades */
+.contact-form{
+font-size: 34px;
+background-color: black;
+width: 50vw;
+height: 50vh;
+}
+
+.contact-form__h2{
+    font-size: 2em;
+}
+/* REM : tiene como referencia el root 
+y tambien se usa bastante*/
+/* em - 16px
+ */
