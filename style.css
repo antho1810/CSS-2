@@ -1,8 +1,11 @@
 * {
-  color: red;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: serif;
   padding: 0px;
   margin: 0px;
 }
+/*
 .Rey {
   color: rgba(7, 213, 245, 0.623);
 }
@@ -50,13 +53,13 @@ button:hover {
 /* Selector por descendiente --> <h1><p></p></h1> => h1 p */
 /* Selecotr por pseudo-clases */
 
-#Go {
+/* #Go {
   color: yellow;
 }
 
 button {
   color: red !important;
-}
+} */
 /* utilizar !important cuando sea la etiqueta 
 sea unica o no se valla a cambiar en un futuro */
 
@@ -74,7 +77,7 @@ sea unica o no se valla a cambiar en un futuro */
 
 
 /* Metodologia BEM */
-.contact-form_input:first-child{
+/* .contact-form_input:first-child{
     color: red;
 }
 
@@ -84,16 +87,16 @@ sea unica o no se valla a cambiar en un futuro */
 
 
 /* Unidades */
-.contact-form{
-font-size: 34px;
+/* .contact-form{
+font-size: 22px;
 background-color: black;
 width: 50vw;
 height: 50vh;
-}
+} */
 
-.contact-form__h2{
+/* .contact-form__h2{
     font-size: 2em;
-}
+} */
 /* REM : tiene como referencia el root 
 y tambien se usa bastante*/
 /* em - 16px
@@ -101,13 +104,34 @@ y tambien se usa bastante*/
 
 
  /* Propiedades de texto */
- .contact-form{
+ /* .contact-form{
     font-family: 'Times New Roman', cursive;
     line-height: 1;
     font-weight: 100;
-    /* font-stretch: normal; */
+    /* font-stretch: normal; 
     font-variant: small-caps;
- }
+ }  */
+
+/* Teoria de cajas */
+/* h2{
+    display: inline;
+    height: 400px;
+    width: 100px;
+}
+
+p{
+    height: 400px;
+    width: 100px;
+} */
+
+/* h2{
+    background-color: red;
+    display: inline-block;
+    padding: 9px, 4px, 1px, 15px;
+
+} */
+
+/* padding: arriba, derecha, abajo, izquierda */
 
 
  
