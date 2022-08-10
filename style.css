@@ -195,7 +195,7 @@ por ejemplo: <h2 style="z-index=2"></h2><h1 style="z-index=0"></h1> */
 
 
 /* El z-index en un contenedor con hijo, para contener el padre por encima del hijo
-necesita poner en el hijo un z-index inferior a cero o un numero un negativo*/
+necesita poner en el hijo, un z-index inferior a cero o un numero un negativo*/
 
 
 .contenedor{
