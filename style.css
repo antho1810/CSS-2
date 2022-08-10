@@ -124,7 +124,7 @@ p{
     width: 100px;
 } */
 
-h2{
+/* h2{
     background-color: red;
     display: inline-block;
     padding: 20px 30px ;
@@ -133,10 +133,40 @@ h2{
     margin: 10px;
     border-radius: 10px;
     border: 4px solid black;
-    box-shadow: 2px 4px 15px 0 black;
+    box-shadow: 2px 4px 15px 0 black;fd
     text-shadow: 2px 2px 7px white;
     transform: rotate(-45deg);
+} */
+
+/* .caja-1, .caja-2{
+  width: 200px;
+  height: 200px;
+  margin: auto;
+} */
+div{
+  width: 200px;
+  height: 200px;
+  background: yellow;
+  display: inline-block;
 }
+
+/* outline sirve para señalar el objeto pero no lo reduce */
+
+.caja-4{
+  outline: 5px solid red;
+}
+
+/* .caja-1{
+  background: blue;
+  outline: 7px solid red;
+  box-sizing: content-box;
+
+}
+
+.caja-2{
+  background: yellow;
+
+} */
 
 
 
