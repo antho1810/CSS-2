@@ -71,6 +71,13 @@ sea unica o no se valla a cambiar en un futuro */
 
 
 
+/* Metodologia BEM */
+.contact-form_input:first-child{
+    color: red;
+}
 
+.contact-form_input--active{
+    color: blue;
+}
 
  
