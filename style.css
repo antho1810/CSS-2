@@ -131,6 +131,8 @@ h2{
     box-sizing: content-box;
     text-align: center;
     margin: 10px;
+    border-radius: 10px;
+    border: 4px solid black;
 }
 
 
