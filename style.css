@@ -130,7 +130,10 @@ h2{
     padding: 20px 30px ;
     box-sizing: content-box;
     text-align: center;
+    margin: 10px;
 }
+
+
 
 /* padding: arriba, derecha, abajo, izquierda */
 
