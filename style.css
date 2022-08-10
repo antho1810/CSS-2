@@ -1,4 +1,4 @@
-* {
+h* {
   font-size: 20px;
   font-weight: 100;
   font-family: serif;
@@ -74,8 +74,6 @@ sea unica o no se valla a cambiar en un futuro */
  ---> Pseudo-elementos */
 /* Por el nivel de jerarquia se mueve en cascada */
 
-
-
 /* Metodologia BEM */
 /* .contact-form_input:first-child{
     color: red;
@@ -102,9 +100,8 @@ y tambien se usa bastante*/
 /* em - 16px
  */
 
-
- /* Propiedades de texto */
- /* .contact-form{
+/* Propiedades de texto */
+/* .contact-form{
     font-family: 'Times New Roman', cursive;
     line-height: 1;
     font-weight: 100;
@@ -143,34 +140,78 @@ p{
   height: 200px;
   margin: auto;
 } */
-div{
+div {
   width: 200px;
   height: 200px;
   background: yellow;
-  display: inline-block;
+  display: block;
+  text-align: center;
 }
 
 /* outline sirve para señalar el objeto pero no lo reduce */
 
-.caja-4{
+/* .caja-4{
   outline: 5px solid red;
-}
-
+} */
 /* .caja-1{
   background: blue;
   outline: 7px solid red;
   box-sizing: content-box;
 
 }
-
 .caja-2{
   background: yellow;
 
 } */
-
-
-
 /* padding: arriba, derecha, abajo, izquierda */
 
+/* .caja-1 {
+  background: orange;
+}
+.caja-2 {
+  background: blueviolet;
+}
+.caja-3 {
+  background: turquoise;
+  position: relative;
+  top: 60px;
+  left: 20px;
+  z-index: 2;
+} */
+/* Position
+--> Relative: adquiere los atributos de top y left como prioridad que bottom y right, 
+si top y left no estan el relative le hara caso los otros 2.
+En un contenedor de padre e hijo el hijo el no tiene position relative se pondre encima del padre.
+--> */
 
- 
+/* .caja-4 {
+  background: indianred;
+  position: relative;
+  z-index: 4;
+} */
+
+/* Z-index: se pone encima de otro objeto depende el valor que uno le de. 
+por ejemplo: <h2 style="z-index=2"></h2><h1 style="z-index=0"></h1> */
+
+
+/* El z-index en un contenedor con hijo, para contener el padre por encima del hijo
+necesita poner en el hijo un z-index inferior a cero o un numero un negativo*/
+
+
+.contenedor{
+  width: 300px;
+  height: 300px;
+  background-color: aqua;
+  margin: 40px;
+  position: relative;
+}
+
+.hijo{
+  background-color: orange;
+  width: 120px;
+  height: 120px;
+
+  top: -20px;
+  left: -20px;
+  z-index: -1;
+}
