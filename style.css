@@ -6,7 +6,26 @@
   margin: 0px;
 }
 
-b{
+div{
+  margin: auto;
+  margin-top: 50px;
+  width: 320px;
+  height: 350px;
+  border: 4px solid red;
+  background: gray;
+  overflow: scroll;
+  /* overflow-y: auto; */
+  overflow-x: hidden;
+}
+/* opacity: le da y/o le quita opacida una etiqueta */
+/* hidden es para ocultar una atributo, por ejemplo overflow-x: hidden */
+
+/* Overflow(buffer): 
+--> visible: el texto que sobresale de la caja deja que sea visible
+--> auto: detecta si es necesario, el texto es largo y sobre salga de la caja, lo que hace es meterlo en la caja y ponerle un scroll
+--> scroll: mete el texto en la caja y le pone un scroll*/
+
+/* b{
   width: 150px;
   height: 150px;
   margin: 20px;
@@ -14,9 +33,9 @@ b{
   background: yellow;
   height: 400px;
   width: 300px;
-  /* display: block; */
+  // display: block;
   display: inline-block;
-}
+} */
 
 /* position fixed: queda en la pantalla y se mueve con el scroll. Se veria bien en un navbar */
 /* position sticky: queda fijo en la pantalla y conserva su espacio. Igual queda fijo como absolute 
@@ -277,7 +296,7 @@ necesita poner en el hijo, un z-index inferior a cero o un numero un negativo*/
 /* Display:
 --> Block: se le puede poner en altura y ancho
 --> Inline: se puede utilizar para texto, no hace 
-caso a las mededias
+caso a las mededias. la etiqueda b tiene por defecto el display inline
 --> Inline-block: se pone en linea y 
 se le puede poner altura y ancho
 --> Flex
