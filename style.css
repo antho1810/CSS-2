@@ -6,20 +6,31 @@
   margin: 0px;
 }
 
+b{
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  border: 10px solid red;
+  background: yellow;
+  height: 400px;
+  width: 300px;
+  /* display: block; */
+  display: inline-block;
+}
 
-/* position fixed: queda fijo en la pantalla y se mueve con el scroll. Se veria bien en un navbar */
+/* position fixed: queda en la pantalla y se mueve con el scroll. Se veria bien en un navbar */
 /* position sticky: queda fijo en la pantalla y conserva su espacio. Igual queda fijo como absolute 
 y conserva su posicion con relative, el texto no se pone por abajo de esta caja.
 Se queda dijo al principio de la view cuando lo posicionamos hay desde el primo pero y queda como un relative, 
 pero cuando lo posicionamos entre 2 texto queda fijo donde lo ubicamos pero cuando hacemos scroll y bajamos hasta 
 el final conmienza a trabajar como si tuviera una posicion fixed */
-.caja-fixed{
+/* .caja-fixed{
   background: red;
   position: sticky;
   opacity: .3;
   top: -20px;
 
-}
+} */
 /*
 .Rey {
   color: rgba(7, 213, 245, 0.623);
@@ -191,7 +202,7 @@ p{
   background-color: red;
   /* outline: 5px solid blue; */
   
-}
+/* }
 .caja-2 {
   background-color: red;
   right: 0;
@@ -214,11 +225,11 @@ bottom: 0;
   bottom: 0;
   margin: auto;
   /* margin: 170px; */
-}
+/* }
 .caja-6{
   margin: 170px 225px 175px 0px;
   background: red;
-} */
+} */ 
 /* .caja-3 {
   background: turquoise;
   position: relative;
@@ -261,3 +272,15 @@ necesita poner en el hijo, un z-index inferior a cero o un numero un negativo*/
   left: -20px;
   z-index: -1;
 } */
+
+
+/* Display:
+--> Block: se le puede poner en altura y ancho
+--> Inline: se puede utilizar para texto, no hace 
+caso a las mededias
+--> Inline-block: se pone en linea y 
+se le puede poner altura y ancho
+--> Flex
+--> G4rid
+--> Inline-flex
+--> Inline-grid*/
