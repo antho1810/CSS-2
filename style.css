@@ -11,7 +11,7 @@
   width: 400px;
   height: 200px;
   border: 5px solid red;
-  background: rgb(255, 255, );
+  background: rgb(0, 255, 255);
   cursor: pointer;
 }
 
@@ -22,7 +22,7 @@
 /* Medidas de colores 
 -- RBG (Red, Green, Blue) o RBGA (Red, Green, Blue, opacidad(alpha)) - es de 0 a 255
 -- Hexadecimal (#fff) - con 3 valor: #redgreenblue; con 4 valores: #redgreenblueapha;
-con 6 valores: #redredgreengreenblueblue; con 8 valores: #redredgreengreenbluebluealphaalpha
+con 6 valores: #redredgreengreenblueblue; con 8 valores: #redredgreengreenbluebluealphaalph
 */
 
 
