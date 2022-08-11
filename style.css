@@ -5,16 +5,20 @@
   padding: 0px;
   margin: 0px;
 }
-body{
-  padding-top: 30px;
-}
 
-/* position fixed: queda fijo en la pantalla se veria bien en un navbar */
+
+/* position fixed: queda fijo en la pantalla y se mueve con el scroll. Se veria bien en un navbar */
+/* position sticky: queda fijo en la pantalla y conserva su espacio. Igual queda fijo como absolute 
+y conserva su posicion con relative, el texto no se pone por abajo de esta caja.
+Se queda dijo al principio de la view cuando lo posicionamos hay desde el primo pero y queda como un relative, 
+pero cuando lo posicionamos entre 2 texto queda fijo donde lo ubicamos pero cuando hacemos scroll y bajamos hasta 
+el final conmienza a trabajar como si tuviera una posicion fixed */
 .caja-fixed{
   background: red;
-  position: fixed;
+  position: sticky;
   opacity: .3;
-  margin: -50px;
+  top: -20px;
+
 }
 /*
 .Rey {
