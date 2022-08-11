@@ -6,6 +6,61 @@
   margin: 0px;
 }
 
+
+.texto{
+  padding: 20px;
+}
+
+.texto::first-line{
+  color: green;
+  font-size: 2em;
+}
+
+.texto::first-letter{
+  font-size: 3em;
+  font-weight: 900;
+}
+
+form{
+  margin: 100px auto;
+  display: block;
+  background-color: #555;
+  padding: 20px;
+  width: 50%;
+
+}
+
+input{
+  width: 100%;
+  padding: 6px;
+}
+
+input::placeholder{
+  color: red;
+  font-size: 20px;
+}
+
+.texto::selection{
+  background-color: blue;
+  color: white;
+}
+
+b{
+  margin: 50px auto;
+  padding: 20px;
+}
+
+b::before{
+  content: "Me suscrbi ";
+  color: blue;
+}
+
+b::after{
+  content: " todo tendencias";
+  color: red;
+  background: white;
+}
+
 /* .cont{
   float: left;
 
@@ -28,7 +83,7 @@
 
 } */
 
-.over{
+/* .over{
   margin: auto;
   margin-top: 50px;
   border: 4px solid red;
@@ -41,7 +96,7 @@
   float: left;
   width: 300px;
   margin-right: 18px;
-}
+} */
 
 /* float usar en img para tener una mejor calidad */
 /* opacity: le da y/o le quita opacida una etiqueta */
@@ -330,3 +385,13 @@ se le puede poner altura y ancho
 --> G4rid
 --> Inline-flex
 --> Inline-grid*/
+
+
+/* Pseudo-Elementos
+
+::first-line solo sirve para los display block
+::first-letter: solo sirve para los display block
+::placeholder
+::after se utiliza para los diferentes display
+::before se utiliza para los diferentes display
+/* ::selection*/
