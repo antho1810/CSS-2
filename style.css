@@ -6,17 +6,44 @@
   margin: 0px;
 }
 
-div{
+/* .cont{
+  float: left;
+
+}
+
+.cont div{
+  float: right;
+  padding: 40px;
+  
+}
+
+.primario{
+  width: 30%;
+  background: blue;
+}
+
+.secundario{
+  width: 70%;
+  background: green;
+
+} */
+
+.over{
   margin: auto;
   margin-top: 50px;
-  width: 320px;
-  height: 350px;
   border: 4px solid red;
   background: gray;
-  overflow: scroll;
-  /* overflow-y: auto; */
-  overflow-x: hidden;
+  width: 50%;
+  padding: 20px;
 }
+
+.over img{
+  float: left;
+  width: 300px;
+  margin-right: 18px;
+}
+
+/* float usar en img para tener una mejor calidad */
 /* opacity: le da y/o le quita opacida una etiqueta */
 /* hidden es para ocultar una atributo, por ejemplo overflow-x: hidden */
 
