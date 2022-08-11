@@ -6,8 +6,62 @@
   margin: 0px;
 }
 
+.lang b:lang(en){
+background: red;
+padding: 20px;
+}
 
-.texto{
+/* .focus{
+  width: 400px;
+  height: 100px;
+background: gray;
+  margin: 25px;
+  transition: all 1s;
+}
+
+.caja:active{
+  background: yellow;
+
+}
+.focus::placeholder{
+  color: black;
+}*/
+
+/* :focus sirve para los input, y con un background y color queda espectacular */
+/* .focus:focus{
+  background: white;
+  padding: 20px;
+} */
+/* .caja1 {
+  height: 200px;
+  width: 200px;
+  color: green !important;
+  /* color: black; 
+  /* transition: backgroud 1s, height .1s, width 1s, border .5s; 
+  transition: all 1s;
+  /* border: 6px solid yellow; 
+}
+
+.caja1:hover {
+  height: 400px;
+  width: 400px;
+  /* border: 8px solid blue; 
+}
+
+.caja1:link {
+  color: blue;
+}
+
+.caja1:visited{
+  color:violet
+}
+
+.caja1:active{
+
+}  */
+/* transition nos ayuda a poner o quitar velocidad cuando utilizamos el :hover */
+
+/* .texto{
   padding: 20px;
 }
 
@@ -27,6 +81,7 @@ form{
   background-color: #555;
   padding: 20px;
   width: 50%;
+  text-align: center;
 
 }
 
@@ -51,15 +106,15 @@ b{
 }
 
 b::before{
-  content: "Me suscrbi ";
+  content: "Me suscrbí ";
   color: blue;
 }
 
 b::after{
   content: " todo tendencias";
   color: red;
-  background: white;
-}
+  background: black;
+} */
 
 /* .cont{
   float: left;
@@ -302,7 +357,7 @@ p{
 .caja-1 {
   background-color: red;
   /* outline: 5px solid blue; */
-  
+
 /* }
 .caja-2 {
   background-color: red;
@@ -330,7 +385,7 @@ bottom: 0;
 .caja-6{
   margin: 170px 225px 175px 0px;
   background: red;
-} */ 
+} */
 /* .caja-3 {
   background: turquoise;
   position: relative;
@@ -374,7 +429,6 @@ necesita poner en el hijo, un z-index inferior a cero o un numero un negativo*/
   z-index: -1;
 } */
 
-
 /* Display:
 --> Block: se le puede poner en altura y ancho
 --> Inline: se puede utilizar para texto, no hace 
@@ -386,7 +440,6 @@ se le puede poner altura y ancho
 --> Inline-flex
 --> Inline-grid*/
 
-
 /* Pseudo-Elementos
 
 ::first-line solo sirve para los display block
@@ -395,3 +448,12 @@ se le puede poner altura y ancho
 ::after se utiliza para los diferentes display
 ::before se utiliza para los diferentes display
 /* ::selection*/
+
+/* Pseudo-Clases
+:hover
+:link
+:visited
+:active
+:focus
+:lang
+*/
