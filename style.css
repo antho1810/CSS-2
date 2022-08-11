@@ -6,10 +6,32 @@
   margin: 0px;
 }
 
-.lang b:lang(en){
+.over {
+  margin: 25px;
+  width: 405px;
+  height: 300px;
+}
+
+.over img {
+  height: 100%;
+  width: 100%;
+  border: 2px solid red;
+  object-fit: scale-down;
+}
+
+/* Object-fit
+sirve mas para imagines o galeria
+-- contain: valor que viene por defecto.
+-- cover: se ajusta el contenedor 
+-- none: valor que viene por defecto en la imagen
+-- scale-down: se queda con el valor mas bajo entre
+contain o none*/
+
+
+/* .lang b:lang(en){
 background: red;
 padding: 20px;
-}
+} */
 
 /* .focus{
   width: 400px;
