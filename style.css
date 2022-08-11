@@ -11,10 +11,29 @@
   width: 400px;
   height: 200px;
   border: 5px solid red;
-  background: pink;
+  background: rgb(255, 255, );
   cursor: pointer;
 }
 
+.over:active {
+  cursor: grab;
+  background-color: rgb(184, 134, 11);
+}
+/* Medidas de colores 
+-- RBG (Red, Green, Blue) o RBGA (Red, Green, Blue, opacidad(alpha)) - es de 0 a 255
+-- Hexadecimal (#fff) - con 3 valor: #redgreenblue; con 4 valores: #redgreenblueapha;
+con 6 valores: #redredgreengreenblueblue; con 8 valores: #redredgreengreenbluebluealphaalpha
+*/
+
+
+/* Tipos de colores
+-- Nomre del color
+-- Hexadecimal
+-- RGB
+-- RGBA
+-- HSL
+-- HSLA
+ */
 
 
 /* Cursores
@@ -33,7 +52,7 @@
 -- e-resize
 -- ew-resize
 -- grab
--- grabbing
+-- grabbing - mano empuñada para mover cuando estas en zoom
 -- help
 -- move
 -- n-resize
