@@ -1,7 +1,29 @@
 * {
-  font-size: 40px;
   font-weight: 100;
   font-family: serif;
-  padding: 0px;
-  margin: 0px;
+}
+
+div {
+  width: 45%;
+  display: inline-block;
+  padding: 20px;
+  background: #ddd;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.caja2 {
+  background: #bbb;
+}
+
+@media only screen and( max-width: 800px) {
+  div {
+    display: block !important;
+    width: 100% !important;
+  }
+  h1 {
+    font-size: 20px !important;
+  }
 }
