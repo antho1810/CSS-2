@@ -6,11 +6,11 @@
 
 .flex-container{
   display: flex;
-  flex-wrap: wrap-reverse;
-  justify-content: space-evenly;
+  /* flex-wrap: wrap-reverse; */
+  /* justify-content: space-evenly; */
   height: 100vh;
  /* align-items: center;  */
- align-content: center;
+ /* align-content: center; */
   /* flex-direction: column; */
   /* transform: rotate(90deg);
   margin-right: 127px;
@@ -23,7 +23,7 @@
   margin: 5px;
   height: 100px;
   min-width: 120px;
-  flex: 1;
+  flex-grow: 1;
   text-align: center;
 
 }
@@ -34,9 +34,16 @@
 
 .red{
   background: red;
+  align-self: baseline;
 }
 
-
+/* Flex -- estas son propiedades para los items
+-- align-self: alineacion en el cross-axis
+-- margin: actua diferente dentro de un contenedor flex, por que
+en vez de quedarse en el ubicacion que uno lo pone, va al contrario de
+esa orden
+-- flex-grow
+*/
 
 /* Flex -- estas son propiedades para los contenedores de los items
 -- display:flex hay que darle un alto y un ancho por que si no no aparecen
