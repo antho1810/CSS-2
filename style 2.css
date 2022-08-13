@@ -6,9 +6,10 @@
 
 .flex-container{
   display: flex;
-  /* flex-wrap: wrap-reverse; */
+  /* flex-wrap: wrap; */
   /* justify-content: space-evenly; */
   height: 100vh;
+  flex-direction: row-reverse;
  /* align-items: center;  */
  /* align-content: center; */
   /* flex-direction: column; */
@@ -22,19 +23,25 @@
   color: white;
   margin: 5px;
   height: 100px;
-  min-width: 120px;
   flex-grow: 1;
+  min-width: 150px;
   text-align: center;
-
+  width: 300px;
+  
 }
 
 .orange{
   background: orange;
+  /* flex-basis: 200px; */
+  flex: 1 0 350px;
+  order: 4;
 }
 
 .red{
   background: red;
-  align-self: baseline;
+  /* flex-grow: 1; */
+  /* align-self: baseline; */
+  flex-shrink: 2;
 }
 
 /* Flex -- estas son propiedades para los items
@@ -42,7 +49,10 @@
 -- margin: actua diferente dentro de un contenedor flex, por que
 en vez de quedarse en el ubicacion que uno lo pone, va al contrario de
 esa orden
--- flex-grow
+-- flex-grow: ajusta el espacio sobrante a los items
+-- flex-basis: esta es el como el width pero es mas especial e importante para el flex
+-- flex-shrink: cede espacio del que ocupa para que las otros items agarren
+-- order: es como z-index pero en el eje en el que apunta el main axis 
 */
 
 /* Flex -- estas son propiedades para los contenedores de los items
@@ -54,7 +64,9 @@ estos no pasarán más abajo si no que sobrepasarán el margen.
 -- flex-flow: es la union de flex-direction y flex wrap, ejemplo: flex-flow: column wrap
 -- justent-content(main-axis(vertical)): es para ponerle un centrarlo o ponerle una aliniacion en view
 -- align-items (cross-axis(horizontal)): alineacion de los items dentro del container y le cierdos margenes a los items
--- align-content: alineacion del contenido */
+-- align-content: alineacion del contenido 
+-- aligh-self: La propiedad align-self especifica la alineación del elemento seleccionado dentro del contenedor flexible. 
+Nota: La propiedad align-self anula la propiedad align-items del contenedor flexible.*/
 
 /* .nav__responsive-ul {
   display: none;
@@ -124,7 +136,7 @@ estos no pasarán más abajo si no que sobrepasarán el margen.
   .nav__li-container {
     position: relative;
     top: -1000px;
-    /* height: 100%; */
+    /* height: 100%; 
     height: calc(100vh - 64px);
     background-color: #746ab8;
     transition: all 1s;
