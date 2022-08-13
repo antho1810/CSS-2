@@ -2,20 +2,112 @@
   font-weight: 100;
   font-family: serif;
 }
+body{
+  background-color: #000;
+}
 
-
-.flex-container{
+.flex-container {
   display: flex;
-  /* flex-wrap: wrap; */
-  /* justify-content: space-evenly; */
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #222;
+  margin: 50px 50px;
+  padding: 20px;
+  border-radius: 2px;
+  border: 14px solid #000;
+  outline: 3px solid #094;
+
+}
+
+.form {
+  min-width: 400px;
+  flex: 1;
+  text-align: center;
+  padding: 30px;
+  order: 5;
+}
+.form__input {
+  color:#fff;
+  width: 100%;
+  padding: 7px;
+  margin: 6px 0;
+  border: none;
+  border-bottom: 3px solid #094;
+  background: transparent;
+  order: 2;
+}
+
+.form__input:focus{
+  background: linear-gradient(to bottom, transparent, #111);
+  outline: none;
+  border-bottom: 3px solid #5ca;
+}
+
+.form textarea {
+  min-height: 140px;
+  resize: none;
+}
+.form-img {
+  flex: 1;
+  display: flex;
+  padding: 10px;
+  min-width: 300px;
+  max-width: 400px;
+  order: 2;
+}
+
+.form-img div {
+  padding: 10px;
+}
+
+.img-container {
+  margin: auto;
+}
+
+.img-container div {
+  background-color: #094;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.form-img img {
+  width: 80%;
+  margin: auto;
+  border-radius: 4px;
+}
+
+.form input[type="submit"]{
+  background-color: #094;
+  border-bottom: none;
+  padding: 12px;
+}
+.form input[type="submit"]:hover{
+  background-color: #072;
+  border-bottom: none;
+  padding: 12px;
+}
+.form input[type="submit"]:focus{
+background: #094;
+}
+.form input[type="submit"]:active{
+background: linear-gradient(to bottom, #072, #050);
+}
+
+/* .flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   height: 100vh;
   flex-direction: row-reverse;
- /* align-items: center;  */
- /* align-content: center; */
-  /* flex-direction: column; */
-  /* transform: rotate(90deg);
+ align-items: center; 
+ align-content: center;
+  flex-direction: column;
+  transform: rotate(90deg);
   margin-right: 127px;
-  margin-top: 50px; */
+  margin-top: 50px;
 }
 
 .flex-item{
@@ -32,17 +124,17 @@
 
 .orange{
   background: orange;
-  /* flex-basis: 200px; */
+  flex-basis: 200px;
   flex: 1 0 350px;
   order: 4;
 }
 
 .red{
   background: red;
-  /* flex-grow: 1; */
-  /* align-self: baseline; */
+  flex-grow: 1;
+  align-self: baseline;
   flex-shrink: 2;
-}
+} */
 
 /* Flex -- estas son propiedades para los items
 -- align-self: alineacion en el cross-axis
