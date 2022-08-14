@@ -8,20 +8,47 @@
   background: slateblue;
   padding: 30px;
 }
+
 .caja {
   background: yellow;
   height: 100px;
   width: 100px;
+  position: relative;
   transition-property: background;
-  transition-duration: 2s;
+  transition-duration: .1s;
   /* transition-delay: 5s; */
   transition-timing-function: ease-in-out;
+  animation: desplazar 1s;
+  animation-iteration-count: 1;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: both;
 }
-.caja:hover {
+/* .caja:hover {
   background: lightgreen;
+} */
+
+@keyframes desplazar {
+  0% {
+    background: #025;
+    left: 0;
+  }
+  50 {
+    background:red
+  }
+  100% {
+    left: 80%;
+    background: green
+  }
 }
 
-
+/* Animaciones
+animation-name: name
+animation-duration: duration
+animation-delay: delay
+animation-timing-function: (transition values)
+animation-iteration-count: number
+animation-fill-mode: none formwards backwards both initial innerit
+animation-direction: normal reverse alternate alternate-reverse */
 
 /* body {
   background: radial-gradient(circle, #fff, #bbb);
@@ -74,7 +101,7 @@ transition-timing-function: linear - ease - ease-in - ease-out ease-in-out -step
     color: white;
   }
 } */
-@media screen and (min-width: 700px) {
+/* @media screen and (min-width: 700px) {
   .content {
     flex-direction: row;
     flex-wrap: wrap;
@@ -96,7 +123,7 @@ transition-timing-function: linear - ease - ease-in - ease-out ease-in-out -step
   .footer {
     flex-basis: 100%;
   }
-}
+} */
 /* @media screen and (min-width: 700px) {
   .content{
   display: grid;
