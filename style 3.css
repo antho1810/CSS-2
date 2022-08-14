@@ -4,13 +4,44 @@
   font-size: 20px;
 }
 
-body {
+
+/* 
+:root{
+  --color-rojo: red;
+  --color-blue: blue;
+}
+ 
+div{
+  padding: 30px;
+  height: 200px;
+  width: 150px;
+  margin: 30px;
+}
+p{
+  --color-blue: #000;
+  color: aliceblue;
+  height: 100px;
+  width: 100px;
+  margin: 30px;
+  background: var(--color-blue);
+
+}
+
+.container{
+  background: var(--color-rojo);
+}
+
+.caja2{
+  background: var(--color-blue);
+} */
+
+/* body {
   background-size: cover;
   background-image: 
   url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1GXzdx1el5E_SeYYJm-VNYpXCc2g2tv5U5A&usqp=CAU)
 }
 .caja {
-  /* background: #025; */
+  /* background: #025; *
   background-clip: border-box;
   background-repeat: no-repeat;
   background-image: 
@@ -41,7 +72,7 @@ b {
 .container {
   background: slateblue;
   padding: 20px 5px;
-}
+} */
 
 /* .caja {
   background: yellow;
