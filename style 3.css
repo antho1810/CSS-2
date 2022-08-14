@@ -3,31 +3,52 @@
   font-family: serif;
   font-size: 20px;
 }
-.container {
-  height: 300px;
-  background: slateblue;
-  padding: 30px;
+.caja{
+  background: #025;
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+  color: white;
+  transition: transform 1s;
+  display: flex;
+  transform: translate(50px);
 }
 
-.caja {
+b{
+  margin: auto;
+  transform: skew(-30deg);
+  clip-path: polygon(50%, 100%, 25%);
+}
+
+.caja:hover{
+  transform: scaley(5) ;
+}
+.container {
+  background: slateblue;
+  padding: 20px 5px;
+}
+
+/* .caja {
   background: yellow;
+  height: 100px;
+  width: 100px;
   height: 100px;
   width: 100px;
   position: relative;
   transition-property: background;
   transition-duration: .1s;
-  /* transition-delay: 5s; */
+  /* transition-delay: 5s; *
   transition-timing-function: ease-in-out;
   animation: desplazar 1s;
   animation-iteration-count: 1;
   animation-direction: alternate-reverse;
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
+} */
 /* .caja:hover {
   background: lightgreen;
 } */
-
+/* 
 @keyframes desplazar {
   0% {
     background: #025;
@@ -40,7 +61,7 @@
     left: 80%;
     background: green
   }
-}
+} */
 
 /* Animaciones
 animation-name: name
