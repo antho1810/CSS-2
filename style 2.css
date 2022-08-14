@@ -2,11 +2,88 @@
   font-weight: 100;
   font-family: serif;
 }
-body{
-  background-color: #000;
+body {
+  background: radial-gradient(circle, #fff, #bbb);
+  padding: 25px;
 }
 
-.flex-container {
+.grid-container {
+  display: grid;
+  /* grid-template-rows: 150px 150px 150px 150px; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3,150px) ;
+  grid-auto-rows: 150px;
+  border: 1px solid #000;
+  background-color: #333;
+  grid-gap: 10px;
+  grid-auto-flow:column;
+  /* grid-row-gap: 10px; */
+  /* grid-column-gap: 10px; */
+}
+
+/* grid dinamico
+-- minmax -- del minimo al maximo tamaño
+-- max-content -- Depende a lo largo del texto o contenido
+-- min-content -- Depende al pequeño que puede ir el texto
+
+-- auto-fill -- crear celdas hasta las medidas que asignamos
+-- auto-fit -- se va acomodando a la grid las celdas que hemos creado */
+
+.grid-item {
+  border: 2px solid #000;
+  background-color: #999;
+  /* grid-column: 1 /3; */
+}
+/* .grid-item:first-child {
+  background: red;
+  grid-column: 1/3;
+  grid-row: 1/3;
+} */
+/* .grid-item:nth-child(3) {
+  background: yellow;
+  grid-column: 3 / span 1;
+  grid-row: 3 / span 2;
+  grid-column: 3/4;
+  grid-row: 3/4;
+  /* grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4; 
+} */
+
+/* grid implicito y explecito
+-- grid-auto-rows (igual que el template)
+-- grid-auto-column (igual que el template)
+-- grid-auto-flow: Row(Default), Column y Dense
+ */
+
+/* Grid - propiedades
+ unidades "auto" y fr (flex
+ repeat
+
+-- grid-templete-row (grid container)
+-- grid-templete-column (grid container)
+-- grid-row-gap ( grid container)
+-- grid-column-gap ( grid container)
+-- grid-gap: row column (grid container)
+-- grid-row-start (grid item)
+-- grid-row-end (grid item)
+-- grid-column-start (grid item)
+-- grid-column-end (grid item)
+-- grid-row (grid item)
+-- grid-column (grid item)
+
+
+ */
+/* Grid
+-- Grid container
+-- "" item 
+-- "" Cell
+-- "" Tracks (Column + Row)
+-- "" Area
+-- "" Line (Column line y Row line*/
+
+/* .flex-container {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -94,7 +171,7 @@ background: #094;
 }
 .form input[type="submit"]:active{
 background: linear-gradient(to bottom, #072, #050);
-}
+} */
 
 /* .flex-container{
   display: flex;
