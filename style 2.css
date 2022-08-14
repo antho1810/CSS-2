@@ -8,24 +8,16 @@ body {
   /* padding: 25px; */
 }
 
+/* Shortand
+gird-template: row / columns (grid container)
+gird-template: area unidad */
+
 .grid-container {
   background: #444;
   margin: 10px;
   display: grid;
-  grid-template-columns:
-    [f-line]
-    150px
-    [s-line]
-    150px
-    [t-line]
-    150px
-    [f-line];
-  grid-template-rows:
-    [linea-izquierda]
-    150px
-    150px
-    150px
-    [fin-del-main];
+  grid-template: repeat(auto-fill, 1fr);
+  /* grid: ; */
   border: 5px solid #000;
 }
 
