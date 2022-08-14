@@ -3,7 +3,54 @@
   font-family: serif;
   font-size: 20px;
 }
+.container{
+  filter: contrast(20);
+  background-color: #fff;
+}
 
+.caja{
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background: red;
+  margin: 40px;
+  border-radius: 50%;
+  filter: blur(20px);
+}
+
+.caja:first-child{
+  animation: trasladat 1.6s alternate infinite
+}
+
+
+
+
+@keyframes trasladat{
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(160px);
+  }
+}
+/* div{
+  filter: drop-shadow(0px 5px 10px #000);
+} */
+
+/* Filter
+none
+blur(px)
+brightness(0-1)
+contrast(number or %)
+drop-shadow(medidas)
+grayscale(%)
+hue-rotate(deg)
+invert(%)
+opacity(%)
+saturate(%)
+sepia(%)
+url("filters.svg#filter.id");
+ */
 
 /* 
 :root{
