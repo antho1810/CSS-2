@@ -3,10 +3,25 @@
   font-family: serif;
   font-size: 20px;
 }
-.caja{
-  background: #025;
-  height: 100px;
-  width: 100px;
+
+body {
+  background-size: cover;
+  background-image: 
+  url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1GXzdx1el5E_SeYYJm-VNYpXCc2g2tv5U5A&usqp=CAU)
+}
+.caja {
+  /* background: #025; */
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-image: 
+  url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOFNaY69u0ZHd4eDGDS52Gick8bs5vdZavPOiUCzONUg&s);
+  background-size: contain;
+  padding: 20px 5px;
+  background-origin: border-box;
+  border: 10px solid transparent;
+  background-position: center;
+  height: 400px;
+  width: 500px;
   margin: 20px;
   color: white;
   transition: transform 1s;
@@ -14,14 +29,14 @@
   transform: translate(50px);
 }
 
-b{
+b {
   margin: auto;
   transform: skew(-30deg);
   clip-path: polygon(50%, 100%, 25%);
 }
 
-.caja:hover{
-  transform: scaley(5) ;
+.caja:hover {
+  transform: scaley(1);
 }
 .container {
   background: slateblue;
