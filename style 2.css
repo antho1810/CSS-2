@@ -10,13 +10,16 @@ body {
 .grid-container {
   display: grid;
   /* grid-template-rows: 150px 150px 150px 150px; */
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3,150px) ;
+  grid-template-columns: repeat(3, minmax(120px, 1fr));
+  grid-template-rows: repeat(3, 200px);
   grid-auto-rows: 150px;
   border: 1px solid #000;
   background-color: #333;
   grid-gap: 10px;
-  grid-auto-flow:column;
+  grid-auto-flow: dense;
+  /* justify-items: center;
+  align-items: center; */
+  place-items: center;
   /* grid-row-gap: 10px; */
   /* grid-column-gap: 10px; */
 }
@@ -27,12 +30,74 @@ body {
 -- min-content -- Depende al pequeño que puede ir el texto
 
 -- auto-fill -- crear celdas hasta las medidas que asignamos
--- auto-fit -- se va acomodando a la grid las celdas que hemos creado */
+-- auto-fit -- se va acomodando a la grid las celdas que hemos creado 
+*/
+
+/* Alineacion y control de flujo 
+Diferencia con flex:
+-- la alineacion es dentro de cada celda y no alineacion total del flex container.
+-- cada celda seria un flex container.
+
+propiedades del grid container
+jusftify-items (horizontalemnte)
+align-items (verticalmente)
+stretch(default) - start -center - end - 
+space-arround - space-between - spae-evenly 
+place-items: align-items + justify-items
+*/
+
+/* Aplicado al grid item
+-- align-self (verticalmente
+-- justify-self (horizontalmente)
+-- place-self: align-self + justify-self
+stretch(default) - start - center - end
+
+-- order (igual que en flex*/
 
 .grid-item {
   border: 2px solid #000;
   background-color: #999;
+  font-size: 30px;
+  padding: 50px;
   /* grid-column: 1 /3; */
+}
+
+.grid-item:first-child {
+  place-self: start;
+  /* align-self: start;
+  justify-self: start; */
+  background: #900;
+}
+
+.grid-item:nth-child(3) {
+  /* place-self: end start */
+  justify-self: end;
+  align-self: start;
+  background: #900;
+}
+
+.grid-item:nth-child(4) {
+  justify-self: end;
+  /* order:1; */
+}
+.grid-item:nth-child(5) {
+  background: yellow;
+}
+.grid-item:nth-child(6) {
+  justify-self: start;
+}
+.grid-item:nth-child(7) {
+  align-self: end;
+  justify-self: start;
+  background: #900;
+}
+
+/* .grid-item:last-child(){} */
+.grid-item:nth-child(9) {
+  place-self: end;
+  /* align-self: end;
+  justify-self: end; */
+  background: #900;
 }
 /* .grid-item:first-child {
   background: red;
@@ -55,6 +120,7 @@ body {
 -- grid-auto-rows (igual que el template)
 -- grid-auto-column (igual que el template)
 -- grid-auto-flow: Row(Default), Column y Dense
+
  */
 
 /* Grid - propiedades
